@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lexrunit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Lex.css">
+  <style>
+  
+
+  </style>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="left-content">
+      <img src="lexrunitlogo dark blue.png" alt="Lexrunit Logo" class="logo">
+      <div class="landingpage-content">
+        <h1 class="landingpage-maintext">A bridge between innovation, research <br> and utilization.</h1>
+        <p class="landingpage-subtext">Explore cutting-edge AI products and solutions to pressing human challenges, shaping tomorrow.</p>
+        <button class="cta-button">Explore Our Products</button>
+      </div>
+    </div>
+
+    <div class="landing-page-image-content">
+      <img class="landingpage-image" src="Lexrunit ai image.jpg" alt="">
+      <div class="nav-links">
+        <a href="#home-section" class="home-option">Home</a>
+        <a href="#about-us-section">About Us</a>
+        <a href="#lexcare-section" class="lexcare-header-text">LexCare</a>
+        <a href="#contact-us-section" class="contactus-header-text">Contact Us</a>
+        <button class="Partner-with-us-button" onclick="document.getElementById('partner-section').scrollIntoView()">Partner with Us</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="home-section" class="homepage">
+    <h1 class="homepage-maintext">Shaping the Future of AI <br> and Research </h1>
+    <p class="homepage-subtext">We specialize in utilizing AI to solve pressing human health problems in <br> the two primary levels: Prevention and <br> cure by leading research and deployment of AI in tackling these issues. <br></p>
+    <p class="homepage-scub-subtext">With our focus in the African landscape, Lexrunit focuses on providing the <br> best solution to African problems in healthcare.</p>
+  </div>
+
+  <div id="about-us-section" class="About-us-page">
+    <h2>ABOUT US</h2>
+    <p class="about-text">
+      At Lexrunit, we are at the forefront of leveraging artificial intelligence (AI) to
+       tackle some of the most pressing healthcare challenges faced across Africa. 
+       With a deep understanding of the continent's unique healthcare landscape,
+        we focus on harnessing cutting-edge technology to develop innovative solutions 
+        that enhance both prevention and treatment outcomes.
+
+      Our mission is to bridge the gap between technological innovation and practical,
+       impactful healthcare solutions. Through our flagship product, LexCare,
+        we aim to revolutionize healthcare delivery by improving the accessibility, 
+        affordability, and effectiveness of medical interventions.
+         Whether it's predictive analytics for early disease detection or
+          AI-powered tools that assist in treatment decisions,
+           LexCare is designed to empower healthcare professionals
+            and improve patient outcomes across the region.
+      
+     
+
+      Together, we are shaping the future of healthcare with AI,
+       bringing a future where innovation meets compassion, and technology meets human-centered care.
+        At Lexrunit, we are not just creating AI products—we are building a healthier, more equitable future for Africa and beyond.
+      
+      
+    </p>
+  </div>
+  <hr>
+
+  <div id="contact-us-section" class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li>About Us</li>
+          <li>Career</li>
+          <li>Partner</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li>Blogs</li>
+          <li>News</li>
+          <li>Tech Briefs</li>
+          <li>Case Studies</li>
+          <li>Sales</li>
+          <li>Webinars</li>
+          <li>Videos</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Products</h4>
+        <ul>
+          <li>LexCare</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Subscribe</h4>
+        <div class="subscribe-container">
+          <input type="email" placeholder="Enter email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+  
+    <div class="footer-socials">
+      <a href="https://youtube.com/@lexrunit?si=sGrsmlo2Xjfb5t9W" target="_blank" class="social-icon youtube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://x.com/lexrunit" target="_blank" class="social-icon twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/update/urn:li:activity:7245629889347764224" target="_blank" class="social-icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.instagram.com/lexrunit?igsh=YzljYTk1ODg3Zg==" target="_blank" class="social-icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+
+  <button id="themeSwitcher" style="position: fixed; bottom: 80px; right: 20px; background-color: #c5ecf4; color: #021488; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+    Toggle Dark/Light Mode
+  </button>
+
+
+  <script src="Lex.js"></script>
+
+</body>
+</html>
