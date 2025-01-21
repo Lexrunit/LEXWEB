@@ -1,15 +1,11 @@
-from flask import Flask, request, render_template
-import csv
-import os
-from email.message import EmailMessage
+from flask import request
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.mime.application import MIMEApplication
 import smtplib
 
 def form_action():
     if request.method == "POST":
-        recipient_email = "lexrunit@gmail.com" 
+        recipient_email = "lexrunit@gmail.com"
         sender_email = "lexrunit@gmail.com"
         if "send-message" in request.form:
             name = request.form["name"]
@@ -18,9 +14,9 @@ def form_action():
 
             subject = "Incoming Message"
             body = f"""
-            Name: {name} \n \n 
+            Name: {name} \n \n
 
-            Email: {email} \n \n 
+            Email: {email} \n \n
 
             Message: {message}
             """
