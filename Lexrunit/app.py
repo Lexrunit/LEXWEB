@@ -21,3 +21,10 @@ def home():
 @app.errorhandler(500)
 def internal_server(error):
     return render_template("servererror.html"), 500
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template("notfound.html"), 404
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=3030)
